@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded',function(){
         
         const botaoSelecionado=botaoDeAcessibilidade.getAtrribute('aria-expanded')=== 'true';
 
-        botaoDeAcessibilidade.setAttribute('aria-expanded', botaoSelecionado);
-
+        botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
 
     })
     
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuirFonteBotao = document.getElementById('diminuir-fonte');
+    const alternaContraste = document.getElementById('laterna-contraste')
 
 
 })
